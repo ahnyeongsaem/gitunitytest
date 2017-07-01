@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class movecube : MonoBehaviour {
 
+    float speed = 20;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -12,5 +14,6 @@ public class movecube : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.Rotate(Time.deltaTime*5, 0, 0);
-	}
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+    }
 }
