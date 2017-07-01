@@ -11,6 +11,8 @@ public class movecube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Time.deltaTime*5, 0, 0);
-	}
+        transform.Rotate(Time.deltaTime*100 , 0, 0);
+        transform.Rotate(0, Time.deltaTime * 100, 0);
+        transform.Rotate(0, 0, Time.deltaTime * 100);
+    }
 }
